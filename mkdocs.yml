@@ -1,72 +1,126 @@
-site_name: Payloads All The Things
-site_description: 'Payloads All The Things, a list of useful payloads and bypasses for Web Application Security'
-site_url: https://swisskyrepo.github.io/PayloadsAllTheThings
-
-repo_url: https://github.com/swisskyrepo/PayloadsAllTheThings/
-edit_uri: edit/master/
-
-# copyright: © 2016 PATT
-# logo: 'images/site_logo.png'
-# favicon: 'images/favicon.png'
+site_name: PayloadsAllTheThings
+site_description: A list of useful payloads and bypasses for Web Application Security
+site_author: swisskyrepo
+site_url: https://swisskyrepo.github.io/PayloadsAllTheThings/
+repo_url: https://github.com/swisskyrepo/PayloadsAllTheThings
+repo_name: PayloadsAllTheThings
+edit_uri: edit/master/docs/
 
 theme:
   name: material
-  custom_dir: overrides
-  color_mode: auto
-  user_color_mode_toggle: true
-  icon:
-    repo: fontawesome/brands/github
+  custom_dir: .github/overrides
+  logo: assets/logo.png
+  favicon: assets/logo.png
   palette:
-    # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-
-    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-
   features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
     - content.code.copy
     - content.action.edit
-    - content.action.view
-    - content.tooltips
-    - navigation.tracking
-    - navigation.top
-    - search.share
-    - search.suggest
-    # - toc.integrate
-    # - navigation.path
 
-extra_css:
-  - custom.css
-
-markdown_extensions:
-  - tables
-  - attr_list
-  - admonition
-  - def_list
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.snippets
-  - pymdownx.inlinehilite
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  # - mdx_truly_sane_lists:
-  #     nested_indent: 2
-  #     truly_sane: True
- 
 plugins:
   - search
-  - git-revision-date-localized
-  - social
+  - git-revision-date-localized:
+      enable_creation_date: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/swisskyrepo/PayloadsAllTheThings
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/swisskyrepo
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+
+nav:
+  - Home: index.md
+  - Methodology:
+    - Methodology/README.md
+  - API Key Leaks:
+    - API Key Leaks/README.md
+  - Command Injection:
+    - Command Injection/README.md
+  - CRLF Injection:
+    - CRLF Injection/README.md
+  - CSRF Injection:
+    - CSRF Injection/README.md
+  - Directory Traversal:
+    - Directory Traversal/README.md
+  - File Inclusion:
+    - File Inclusion/README.md
+  - File Upload:
+    - File Upload/README.md
+  - GraphQL Injection:
+    - GraphQL Injection/README.md
+  - Insecure Deserialization:
+    - Insecure Deserialization/README.md
+  - LaTeX Injection:
+    - LaTeX Injection/README.md
+  - LDAP Injection:
+    - LDAP Injection/README.md
+  - NoSQL Injection:
+    - NoSQL Injection/README.md
+  - OAuth:
+    - OAuth/README.md
+  - Open Redirect:
+    - Open Redirect/README.md
+  - Prototype Pollution:
+    - Prototype Pollution/README.md
+  - Request Smuggling:
+    - Request Smuggling/README.md
+  - Server Side Request Forgery:
+    - Server Side Request Forgery/README.md
+  - Server Side Template Injection:
+    - Server Side Template Injection/README.md
+  - SQL Injection:
+    - SQL Injection/README.md
+  - Type Juggling:
+    - Type Juggling/README.md
+  - Upload Insecure Files:
+    - Upload Insecure Files/README.md
+  - Web Cache Deception:
+    - Web Cache Deception/README.md
+  - Web Sockets:
+    - Web Sockets/README.md
+  - XPATH Injection:
+    - XPATH Injection/README.md
+  - XSS Injection:
+    - XSS Injection/README.md
+  - XXE Injection:
+    - XXE Injection/README.md
