@@ -34,6 +34,10 @@ This repository is a collection of payloads, techniques, and resources for web a
 | [XSS Injection](XSS-Injection/README.md) | Cross-site scripting payloads and bypasses |
 | [XXE Injection](XXE-Injection/README.md) | XML external entity injection payloads |
 
+## Personal Notes
+
+> **Note (personal):** I'm using this fork primarily to study SSRF and SSTI techniques for a CTF series. The SQL Injection and XSS Injection sections have been especially useful — worth reading those READMEs end-to-end before diving into the others.
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
@@ -49,4 +53,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - Original project by [swisskyrepo](https://github.com/swisskyrepo/PayloadsAllTheThings)
-- All contributors who have helped expand this resource
+- All contributors to the upstream repository
