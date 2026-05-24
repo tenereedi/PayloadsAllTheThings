@@ -34,6 +34,7 @@ theme:
     - navigation.top
     - search.highlight
     - search.share
+    - search.suggest
     - content.code.copy
     - content.action.edit
 
@@ -115,12 +116,4 @@ nav:
   - Upload Insecure Files:
     - Upload Insecure Files/README.md
   - Web Cache Deception:
-    - Web Cache Deception/README.md
-  - Web Sockets:
-    - Web Sockets/README.md
-  - XPATH Injection:
-    - XPATH Injection/README.md
-  - XSS Injection:
-    - XSS Injection/README.md
-  - XXE Injection:
-    - XXE Injection/README.md
+    - W
