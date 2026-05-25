@@ -39,13 +39,9 @@ This repository is a collection of payloads, techniques, and resources for web a
 > **Note (personal):** I'm using this fork primarily to study SSRF and SSTI techniques for a CTF series. The SQL Injection and XSS Injection sections have been especially useful — worth reading those READMEs end-to-end before diving into the others.
 >
 > **Study order that worked for me:** XSS Injection → CSRF Injection → SSRF → SSTI → SQL Injection. Starting with XSS first gave good context for understanding how client-side trust issues escalate into server-side ones.
+>
+> **CTF-specific reminder:** For SSTI, Jinja2 (Python/Flask) and Twig (PHP) are the most common in CTF challenges. The `{{7*7}}` probe works for both — but Twig returns `49` while Jinja2 also returns `49`, so follow up with `{{7*'7'}}` to distinguish them (Jinja2 returns `7777777`, Twig returns `49`).
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
-
-## License
-
-[![License: MIT](https://img.shields.io/badge/Lice
+Pull requests are welcome. For major changes, please open an issue first to discuss 
