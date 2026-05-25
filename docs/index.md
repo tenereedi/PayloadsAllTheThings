@@ -37,6 +37,8 @@ This repository is a collection of payloads, techniques, and resources for web a
 ## Personal Notes
 
 > **Note (personal):** I'm using this fork primarily to study SSRF and SSTI techniques for a CTF series. The SQL Injection and XSS Injection sections have been especially useful — worth reading those READMEs end-to-end before diving into the others.
+>
+> **Study order that worked for me:** XSS Injection → CSRF Injection → SSRF → SSTI → SQL Injection. Starting with XSS first gave good context for understanding how client-side trust issues escalate into server-side ones.
 
 ## Contributing
 
@@ -46,11 +48,4 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## License
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Original project by [swisskyrepo](https://github.com/swisskyrepo/PayloadsAllTheThings)
-- All contributors to the upstream repository
+[![License: MIT](https://img.shields.io/badge/Lice
