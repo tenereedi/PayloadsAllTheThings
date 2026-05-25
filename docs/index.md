@@ -40,4 +40,6 @@ This repository is a collection of payloads, techniques, and resources for web a
 >
 > **Study order that worked for me:** XSS Injection → CSRF Injection → SSRF → SSTI → SQL Injection. Starting with XSS first gave good context for understanding how client-side trust issues escalate into server-side ones.
 >
-> **CTF-specific reminder:** For SSTI, Jinja2 (Python/Flask) and Twig (PHP) are the most common in CTFs. Freemarker (Java) shows up occasionally in HackTheBox machines — worth skimming that section too. For blind SSTI detection, `{{7*7}}` / `${7*7}` / `<%= 7*7 %>` are good first probes to identify the engine before going deeper.
+> **CTF-specific reminder:** For SSTI, Jinja2 (Python/Flask) and Twig (PHP) are the most common in CTFs. Freemarker (Java) shows up occasionally in HackTheBox machines — worth having a cheat sheet handy for that one too.
+>
+> **Useful external refs:** [HackTricks SSTI](https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection) and [PortSwigger Web Security Academy](https://portswigger.net/web-security) are good companions to the payloads here.
