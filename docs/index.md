@@ -40,8 +40,4 @@ This repository is a collection of payloads, techniques, and resources for web a
 >
 > **Study order that worked for me:** XSS Injection → CSRF Injection → SSRF → SSTI → SQL Injection. Starting with XSS first gave good context for understanding how client-side trust issues escalate into server-side ones.
 >
-> **CTF-specific reminder:** For SSTI, Jinja2 (Python/Flask) and Twig (PHP) are the most common in CTF challenges. The `{{7*7}}` probe works for both — but Twig returns `49` while Jinja2 also returns `49`, so follow up with `{{7*'7'}}` to distinguish them (Jinja2 returns `7777777`, Twig returns `49`).
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss 
+> **CTF-specific reminder:** For SSTI, Jinja2 (Python/Flask) and Twig (PHP) are the most common in CTFs. Freemarker (Java) shows up occasionally in HackTheBox machines — worth skimming that section too. For blind SSTI detection, `{{7*7}}` / `${7*7}` / `<%= 7*7 %>` are good first probes to identify the engine before going deeper.
